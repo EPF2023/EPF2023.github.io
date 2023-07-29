@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=gbk">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
@@ -37,6 +37,7 @@
         </tr>
       </tbody>
     </table>
+    <br>
     <h2>Scientific Rationale</h2>
     <p>Exoplanets and planet formation are among the most rapidly developing and
       fields in astrophysics. This is largely driven by the advent of major
@@ -52,8 +53,8 @@
     <h2> Confirmed Speakers </h2>
     <div class="two-column-layout">
       <div class="left-column">
-        <ul>
-          <li style="margin-left: 0px;">Eugene Chiang</li>
+        <ul class="two-column">
+          <li>Eugene Chiang</li>
           <li>Shigeru Ida</li>
           <li>Shu-ichiro Inutsuka</li>
           <li>Dong Lai</li>
@@ -62,7 +63,7 @@
         </ul>
       </div>
       <div class="right-column">
-        <ul>
+        <ul style="width: 100%;">
           <li>Chris Ormel</li>
           <li>Lile Wang </li>
           <li>Yanqin Wu</li>
@@ -106,7 +107,7 @@
         </tr>
       </tbody>
     </table>
-    <footer>Exoplanet &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
+    <footer> ©Exoplanet &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
       on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
   </body>
