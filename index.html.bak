@@ -5,20 +5,21 @@
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
-    <meta name="description" content="Conference Template">
+    <meta name="description" content="EPF2023">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Conference Template</title>
+    <title>EPF2023</title>
   </head>
   <body>
-    <div class="banner"> <img src="assets/banner_yanqing.jpg" alt="Conference Template Banner">
+    <div class="banner"> <img src="assets/banner_yanqing.jpg" alt="EPF2023 Banner">
       <div class="top-left"> <span class="title1">Exoplanet &amp; Planet </span><span
 
           class="title2">Formation Workshop</span> <span class="year">2023</span>
       </div>
       <div class="bottom-right">&nbsp; December 16-19, 2023<br>
         Yanqing, Beijing</div>
+    <div class="cite">Image taken by Zhuoxiao Wang (王卓骁) at Haituo Mountain, Yanqing</div>
     </div>
     <table class="navigation">
       <tbody>
@@ -32,7 +33,7 @@
           </td>
           <td class="navigation"> <a title="Directions to the Conference" href="directions">Directions</a>
           </td>
-          <td class="navigation"> <a title="Conference Flyer" href="flyer">Poster</a>
+          <td class="navigation"> <a title="Conference Flyer" href="flyer">Participant List</a>
           </td>
         </tr>
       </tbody>
@@ -53,21 +54,29 @@
     <h2> Confirmed Speakers </h2>
     <div class="two-column-layout">
       <div class="left-column">
-        <ul class="two-column">
+        <ul style="width: 100%;">
           <li>Eugene Chiang</li>
+          <li>Ruobing Dong</li>
+          <li>Fei Dai</li>
+          <li>Fabo Feng</li>
+          <li>Yuri Fujii</li>
+          <li>Teruyuki Hirano</li>
+          <li>Daniel Harsono</li>
+          <!--<li>Shu-ichiro Inutsuka</li>-->
           <li>Shigeru Ida</li>
-          <li>Shu-ichiro Inutsuka</li>
           <li>Dong Lai</li>
-          <li>Min-Kai Lin</li>
-          <li>Hauyu Baobab Liu</li>
         </ul>
       </div>
       <div class="right-column">
         <ul style="width: 100%;">
+          <li>Min-Kai Lin</li>
+          <li>Hauyu Baobab Liu</li>
+          <li>Satoshi Okuzumi</li>
           <li>Chris Ormel</li>
-          <li>Lile Wang </li>
+          <li>Lile Wang</li>
           <li>Yanqin Wu</li>
           <li>Ji-Wei Xie</li>
+          <li>Fei Yan</li>
           <li>and more to follow</li>
         </ul>
       </div>
@@ -76,7 +85,7 @@
     <div class="two-column-layout">
       <div class="left-column">
         <h3 class="two-colum-title">SOC</h3>
-        <ul>
+        <ul style="width: 100%;">
           <li>Xuening Bai (Chair)</li>
           <li>Beibei Liu</li>
           <li>Sharon Wang</li>
@@ -85,7 +94,7 @@
       </div>
       <div class="right-column">
         <h3 class="two-colum-title">LOC</h3>
-        <ul>
+        <ul style="width: 100%;">
           <li>Huanyu Teng</li>
           <li>Sharon Wang</li>
           <li>Yindong Zhang</li>
@@ -107,7 +116,7 @@
         </tr>
       </tbody>
     </table>
-    <footer> ©Exoplanet &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
+    <footer> &copy;Exoplanet &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
       on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
   </body>
