@@ -48,6 +48,7 @@ h2{font-size:2.00em;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:950px; text-align:left;}
+p,li{font-size:18px; line-height:1.5;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 ul{list-style:none; margin:20px auto 0px auto; padding:0px; width:800px; text-align:left;}
 ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
@@ -89,14 +90,15 @@ th,td{
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:1000px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-
+/**/
+table.list{margin-left: 24px;}
 /*  左右两列*/
 h3.two-colum-title { margin: 20px auto 0px auto;}
 div.two-column-layout {margin-top: 0px;margin-left: auto;width: 100%;display: grid; /* 使用 CSS Grid 布局 */
     grid-template-columns: 60% 40%; /* 将容器分成两列，每列的宽度平分 */
     grid-gap: 0px; padding-left: 20px;/* 设置列之间的间隔为 0px */}
-
-  
+/*table in logistic page*/
+td.note {text-align: center;}
 /* Sponsor Images */
 table.sponsors{width:400px;margin-top: 100px;margin-bottom: 0px;}
 td.sponsor{white-space:nowrap; width:40%; text-align:left; vertical-align:bottom; padding:5% 5% 5% 5%;}
@@ -134,5 +136,7 @@ footer{font-size:0.875em; margin-top:5em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+    table.list{font-size: 0.5em;}
+    td.note{font-size: 1em;}
 }
 

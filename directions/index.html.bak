@@ -1,69 +1,68 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
+    <meta name="Venue" content="EPF2023">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
-</head>
+    <title>Venue | EPF2023</title>
+  </head>
+  <body>
+    <div class="banner"> <img src="assets/banner_yanqing.jpg" alt="EPF2023 Banner">
+      <div class="top-left"> <span class="title1">Exoplanets &amp; Planet </span><span
 
-<body>
-
-    <div class="banner"> <img src="assets/banner_yanqing.jpg" alt="Conference Template Banner">
-        <div class="top-left"> <span class="title1">Exoplanet &amp; Planet </span><span
-  
-            class="title2">Formation Workshop</span> <span class="year">2023</span>
-        </div>
-        <div class="bottom-right">&nbsp; December 16-19, 2023<br>
-          Yanqing, Beijing</div>
+          class="title2">Formation Workshop</span> <span class="year">2023</span>
       </div>
-
+      <div class="bottom-right">&nbsp; December 16-19, 2023<br>
+        Yanqing, Beijing</div>
+      <div class="cite">Image taken by Zhuoxiao Wang (王卓骁) at Haituo Mountain, Yanqing</div>
+    </div>
     <table class="navigation">
+      <tbody>
         <tr>
-            <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+          <td class="navigation"> <a title="Conference Home Page" href=".">Home</a>
+          </td>
+          <td class="navigation"> <a title="Register for the Conference" href="registration">Registration</a>
+          </td>
+          <td class="navigation"> <a title="Conference Program" href="program">Program</a>
+          </td>
+          <td class="navigation"> <a class="current" title="Logistics of the Conference"
+
+              href="directions">Logistics</a> </td>
+            <td class="navigation"> <a title="Conference Participant List" href="flyer">Participant List</a>
             </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
+      </tbody>
     </table>
-
-
-    <h2>Directions</h2>
-    <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
-    </p>
-
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
-
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
-
-    <footer>
-        &copy;Exoplanet &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
-        on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
-      </footer>
-
-</body>
+    <h2>Conference venue</h2>
+    <p>EPF will be held at <a href="https://www.clubmed.com.cn/r/%E5%8C%97%E4%BA%AC%E5%BB%B6%E5%BA%86%E4%B8%BD%E7%92%9F%E6%A5%BC/y">Club Med: Yanqing Beijing Lijing Tower(北京延庆丽璟楼).</a> Club Med Joyview Yanqing Beijing
+       is a 4A-level Scenic Spot with the lush green mountains of Beijing Songshan Natural Reserve as backdrop</p>
+       <p>This <a href="https://goo.gl/maps/KJVpJbSoUanrZUDW8">map</a> shows the location of Club Med Joyview Yanqing Resort which is a 30-minute drive from Yanqing Railway Station
+         and one hour and a half drive from Beijing Captial Airport</p>
+        <p>For non-Chinese speaker, you can show the content below to the taxi driver</p>
+        <h2 style="text-align: center;">北京延庆度假村</h2>
+    <h2>Excursion</h2>
+    <p>The Yanqing National Alpine Ski Centre is a Chinese alpine ski resort in Yanqing District, 
+      a suburban district in Beijing. The centre was constructed as part of the Yanqing cluster of 2022 Winter Olympics venues, 
+      alongside the Yanqing National Sliding Centre. It has trails totaling 10 kilometres (6.2 mi), 
+      including seven racing courses with inclines up to 68%, among the steepest in the world.</p>
+    <p>Being the ancient military defence project, Great Wall is symbol and proud of China. Badalingis the site of the most visited section of the Great Wall of China, 
+      approximately 80 kilometers (50 mi) northwest of Beijing's city center, 
+      in Badaling Town, Yanqing District, Beijing municipality. 
+      The portion of the wall running through the site was built in 1504 during the Ming Dynasty, along with a military outpost reflecting the location's strategic importance. 
+      The highest point of Badaling is Beibalou (北八樓), approximately 1,015 meters (3,330 ft) above sea level.</p>
+    <h2>Google service</h2>
+    <p>Note that google service does not work here. Please prepare if you need.</p>
+    <h2>Visa information</h2>
+    <p>Under construction</p>
+    <h2>Child care service</h2>
+    <p>Club Med provides child care service. Please contract with us if you need book this service beforehand. </p>
+    <!--<iframe class="directions" src="https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d134998.56138929052%212d-121.98776790326531%213d37.869213445646146%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x808ff431db2f96d1%3A0x8b99d90a20aa67de%212sMt+Diablo%215e0%213m2%211sen%212sus%214v1561787340910%215m2%211sen%212sus"></iframe>
+    --><footer> &#169;Exoplanets &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
+      on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+  </body>
 </html>
