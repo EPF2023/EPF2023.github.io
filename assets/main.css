@@ -90,15 +90,17 @@ th,td{
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:1000px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-/**/
-table.list{margin-left: 24px;}
 /*  左右两列*/
 h3.two-colum-title { margin: 20px auto 0px auto;}
 div.two-column-layout {margin-top: 0px;margin-left: auto;width: 100%;display: grid; /* 使用 CSS Grid 布局 */
     grid-template-columns: 60% 40%; /* 将容器分成两列，每列的宽度平分 */
     grid-gap: 0px; padding-left: 20px;/* 设置列之间的间隔为 0px */}
 /*table in logistic page*/
+table.list{border-collapse: collapse; margin-left: 24px;border: 1px solid black;width: 850px;}
 td.note {text-align: center;}
+td.border {border: 1px solid black;text-align: center;}
+th.border {border: 1px solid black;text-align: center;}
+ol{margin-left: 48px;}
 /* Sponsor Images */
 table.sponsors{width:400px;margin-top: 100px;margin-bottom: 0px;}
 td.sponsor{white-space:nowrap; width:40%; text-align:left; vertical-align:bottom; padding:5% 5% 5% 5%;}
@@ -130,8 +132,11 @@ footer{font-size:0.875em; margin-top:5em; text-align:center;}
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
+    h3{font-size: 2.00em;}
     p{font-size:1.5em; line-height:1.5em;}
+    div.two-column-layout{font-size: 0.75em;}
     ul li{font-size:2em; line-height:2em;}
+    ol li{font-size:1.5em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
