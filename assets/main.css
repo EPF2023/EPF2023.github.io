@@ -95,6 +95,8 @@ h3.two-colum-title { margin: 20px auto 0px auto;}
 div.two-column-layout {margin-top: 0px;margin-left: auto;width: 100%;display: grid; /* 使用 CSS Grid 布局 */
     grid-template-columns: 60% 40%; /* 将容器分成两列，每列的宽度平分 */
     grid-gap: 0px; padding-left: 20px;/* 设置列之间的间隔为 0px */}
+ul.list {list-style:circle; margin-left: 24px;}
+li.list{list-style:disc;margin-left: 24px;}
 /*table in logistic page*/
 table.list{border-collapse: collapse; margin-left: 24px;border: 1px solid black;width: 850px;}
 td.note {text-align: center;}
@@ -137,6 +139,7 @@ footer{font-size:0.875em; margin-top:5em; text-align:center;}
     div.two-column-layout{font-size: 0.75em;}
     ul li{font-size:2em; line-height:2em;}
     ol li{font-size:1.5em; line-height:1.5em;}
+    ul.list{font-size:0.75em; line-height:0.75em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
