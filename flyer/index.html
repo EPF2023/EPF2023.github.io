@@ -38,22 +38,33 @@
     </table>
     <br>
     <h2>Under construction.</h2>
-    <!--<table class="flyers">
-      <tbody>
-        <tr>
-          <td class="flyer"> <a href="assets/MathConnections-Flyer.pdf"> <img
-
-                src="assets/MathConnections-Flyer.png" alt="MathConnections Color Flyer"
-
-                style="width:100%"> </a> </td>
-          <td class="flyer"> <a href="assets/MathConnections-FlyerBW.pdf"> <img
-
-                src="assets/MathConnections-FlyerBW.png" alt="MathConnections BW Flyer"
-
-                style="width:100%"> </a> </td>
-        </tr>
-      </tbody>
-    </table>-->
+    <table class="list" id="myTable">
+      <tr>
+        <th class="border">Name</th>
+        <th class="border">Institution</th>
+      </tr>
+    </table>
+    <script>
+      //read csv data assets/Register for Exoplanets and Planet Formation 2023.csv
+      fetch('assets/participant_list.csv')
+  .then(response => response.text())
+  .then(data => {
+    const csvData = data.split('\n').map(row => row.split(','));
+    const tableBody = document.getElementById('myTable');
+    csvData.forEach((row, index) => {
+      if (index > 0) { // Skip header row
+        const newRow = tableBody.insertRow(-1);
+        const newCell1 = newRow.insertCell(0);
+        newCell1.textContent = (row[2] + ' ' + row[1]).replace(/"/g, ''); // Remove double quotes
+        newCell1.className = 'border'; // Set class name
+        const newCell2 = newRow.insertCell(1);
+        newCell2.textContent = row[6].replace(/"/g, ''); // Remove double quotes
+        newCell2.className = 'border'; // Set class name
+      }
+    });
+  })
+  .catch(error => console.error('Error:', error));
+    </script>
     <footer> &copy;Exoplanets &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
       on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
