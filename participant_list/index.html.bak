@@ -9,7 +9,7 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Flyer | Conference Template</title>
+    <title>Participant list | Conference Template</title>
   </head>
   <body>
     <div class="banner"> <img src="assets/banner_yanqing.jpg" alt="Conference Template Banner">
@@ -40,14 +40,14 @@
     <table class="flyers">
       <tbody>
         <tr>
-          <td class="flyer"> <a href="assets/MathConnections-Flyer.pdf"> <img
+          <td class="participant_list"> <a href="assets/MathConnections-Participant list.pdf"> <img
 
-                src="assets/MathConnections-Flyer.png" alt="MathConnections Color Flyer"
+                src="assets/MathConnections-Participant list.png" alt="MathConnections Color Participant list"
 
                 style="width:100%"> </a> </td>
-          <td class="flyer"> <a href="assets/MathConnections-FlyerBW.pdf"> <img
+          <td class="participant_list"> <a href="assets/MathConnections-FlyerBW.pdf"> <img
 
-                src="assets/MathConnections-FlyerBW.png" alt="MathConnections BW Flyer"
+                src="assets/MathConnections-FlyerBW.png" alt="MathConnections BW Participant list"
 
                 style="width:100%"> </a> </td>
         </tr>
