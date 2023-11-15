@@ -52,15 +52,22 @@
   skipEmptyLines: true,
   complete: function(results) {
     const tableBody = document.getElementById('myTable');
-    results.data.forEach((row, index) => {
-      const newRow = tableBody.insertRow(-1);
-      const newCell1 = newRow.insertCell(0);
-      newCell1.textContent = (row['Given/First Name(s)'] + ' ' + row['Family/Last Name']).replace(/"/g, ''); // Replace 'Column3' and 'Column2' with your actual column names
-      newCell1.className = 'border'; // Set class name
-      const newCell2 = newRow.insertCell(1);
-      newCell2.textContent = row['Institute'].replace(/"/g, ''); // Replace 'Column7' with your actual column name
-      newCell2.className = 'border'; // Set class name
-    });
+    let previousRowContent = null;
+results.data.forEach((row, index) => {
+  const currentRowContent = (row['Given/First Name(s)'] + ' ' + row['Family/Last Name']).toLowerCase();
+
+  if (currentRowContent !== previousRowContent) {
+    const newRow = tableBody.insertRow(-1);
+    const newCell1 = newRow.insertCell(0);
+    newCell1.textContent = (row['Given/First Name(s)'] + ' ' + row['Family/Last Name']).replace(/"/g, '');
+    newCell1.className = 'border';
+    const newCell2 = newRow.insertCell(1);
+    newCell2.textContent = row['Institute'].replace(/"/g, '');
+    newCell2.className = 'border';
+  }
+
+  previousRowContent = currentRowContent;
+});
   }
 });
     </script>
