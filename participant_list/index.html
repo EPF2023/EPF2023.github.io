@@ -53,13 +53,19 @@
   complete: function(results) {
     const tableBody = document.getElementById('myTable');
     let previousRowContent = null;
+    function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
 results.data.forEach((row, index) => {
-  const currentRowContent = (row['Given/First Name(s)'] + ' ' + row['Family/Last Name']).toLowerCase();
+  const firstName = capitalizeFirstLetter(row['Given/First Name(s)']);
+  const lastName = capitalizeFirstLetter(row['Family/Last Name']);
+  const currentRowContent = (firstName + ' ' + lastName).toLowerCase();
 
   if (currentRowContent !== previousRowContent) {
     const newRow = tableBody.insertRow(-1);
     const newCell1 = newRow.insertCell(0);
-    newCell1.textContent = (row['Given/First Name(s)'] + ' ' + row['Family/Last Name']).replace(/"/g, '');
+    newCell1.textContent = firstName + ' ' + lastName;
     newCell1.className = 'border';
     const newCell2 = newRow.insertCell(1);
     newCell2.textContent = row['Institute'].replace(/"/g, '');
