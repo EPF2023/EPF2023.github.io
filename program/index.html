@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
@@ -73,12 +74,158 @@
               </tr>
             </tbody>
           </table> -->
-    <p style="text-align: center;">
-      <!-- <img src="assets/program.png" width="900px"> -->
+    <!--<p style="text-align: center;">
+      <img src="assets/program.png" width="900px"> 
       <img src="https://raw.githubusercontent.com/weizhu0026/public/main/EPF2023-program.png" width="900px"
       alt="EPF2023 Preliminary Program">
     </p>
-    <p>If the image fails to load, please click <a href="http://i.astro.tsinghua.edu.cn/~wzhu/EPF2023-program.png">here</a> to view it.</p>
+    <p>If the image fails to load, please click <a href="http://i.astro.tsinghua.edu.cn/~wzhu/EPF2023-program.png">here</a> to view it.</p> -->
+    <br>
+    <h2>December 16th, 2023</h2>
+    <a id="toggleButton1">click here to show details</a>
+    <div id="toggleContent1">
+    <table class="list" id="programTable1">
+        <td class="border" colspan="4" style=" font-size:1em; padding : 8px 8px">
+          8:50-9:00
+        </td>
+        <td class="border" colspan="6" style=" font-size:1em; padding : 8px 8px">
+          Opening Remarks
+    </table>
+  </div>
+
+  <h2>December 17th, 2023</h2>
+  <a id="toggleButton2">click here to show details</a>
+  <div id="toggleContent2">
+    <table class="list" id='programTable2'>
+    </table>
+  </div>
+
+  <h2>December 18th, 2023</h2>
+  <a id="toggleButton3">click here to show details</a>
+  <div id="toggleContent3">
+    <table class="list" id='programTable3'>
+    </table>
+  </div>
+
+  <h2>December 19th, 2023</h2>
+  <a id="toggleButton4">click here to show details</a>
+  <div id="toggleContent4">
+    <table class="list" id='programTable4'>
+    </table>
+  </div>
+  
+    <script>
+    function toggleContentVisibility(buttonId, contentId) {
+    const toggleButton = document.getElementById(buttonId);
+    const toggleContent = document.getElementById(contentId);
+
+    // 初始状态为不展开
+    let isExpanded = false;
+    toggleContent.style.display = 'none';
+
+    toggleButton.addEventListener('click', function () {
+      // 切换状态
+      isExpanded = !isExpanded;
+      // 根据状态改变内容的显示状态
+      toggleContent.style.display = isExpanded ? 'block' : 'none';
+    });
+  }
+    // Example usage
+    toggleContentVisibility('toggleButton1', 'toggleContent1');
+    toggleContentVisibility('toggleButton2', 'toggleContent2');
+    toggleContentVisibility('toggleButton3', 'toggleContent3');
+    toggleContentVisibility('toggleButton4', 'toggleContent4');
+    function generateTable(data, tableId) {
+    const table = document.getElementById(tableId);
+    // Create the table body rows
+    data.forEach(rowData => {
+      const tableRow = document.createElement('tr');
+      const columns = Object.values(rowData);
+      const nonEmptyColumns = columns.filter(column => column !== '');
+      const totalColumns = columns.length;
+      const nonEmptyColumnsCount = nonEmptyColumns.length;
+      const colspan = Math.ceil(totalColumns / nonEmptyColumnsCount);
+      const bold = nonEmptyColumns[0].includes('session');
+      let length = [0]
+      if (nonEmptyColumnsCount === 1){
+        length = [10]
+      } else if (nonEmptyColumnsCount == 2){
+        length = [4,6]
+      } else{
+        length = [2,2,6]
+      }
+      nonEmptyColumns.forEach((column,index) => {
+        const tableCell = document.createElement('td');
+        tableCell.textContent = column;
+        tableCell.setAttribute('colspan', length[index]);
+        tableCell.setAttribute('style', 'text-align: center;padding:4px 12px 4px 4px;');
+        tableCell.setAttribute('class', 'border');
+        if (bold) {
+          tableCell.textContent=''
+          const sessionName = column.split(' session, chaired by:');
+          const span3 = document.createElement('span');
+          span3.textContent = sessionName[0];
+          span3.setAttribute('class', 'title-special');
+          tableCell.appendChild(span3)
+          const span1 = document.createElement('span');
+          span1.textContent = 'session, chaired by';
+          const span2 = document.createElement('span');
+          span2.setAttribute('class', 'title-special');
+          span2.textContent = sessionName[1];
+          tableCell.appendChild(span1)
+          tableCell.appendChild(span2)
+          tableCell.setAttribute('style', 'text-align: center;');
+        }
+        tableRow.appendChild(tableCell);
+      });
+      if (nonEmptyColumnsCount === 2 && (!nonEmptyColumns[1].includes('Remark'))) {
+        tableRow.setAttribute('style', 'background-color: deepskyblue; color: white;');
+      }
+      table.appendChild(tableRow);
+    });
+  }
+
+  // Example usage for three tables
+  const file1 = 'assets/program_16.csv';
+  Papa.parse(file1, {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: function(results) {
+      generateTable(results.data, 'programTable1');
+    }
+  });
+
+  const file2 = 'assets/program_17.csv';
+  Papa.parse(file2, {
+    download: true,
+    header: false,
+    skipEmptyLines: true,
+    complete: function(results) {
+      generateTable(results.data, 'programTable2');
+    }
+  });
+
+  const file3 = 'assets/program_18.csv';
+  Papa.parse(file3, {
+    download: true,
+    header: false,
+    skipEmptyLines: true,
+    complete: function(results) {
+      generateTable(results.data, 'programTable3');
+    }
+  });
+
+  const file4 = 'assets/program_19.csv';
+  Papa.parse(file4, {
+    download: true,
+    header: false,
+    skipEmptyLines: true,
+    complete: function(results) {
+      generateTable(results.data, 'programTable4');
+    }
+  });
+  </script>
     <footer> &copy;Exoplanets &amp; Planet Formation Workshop 2023 &nbsp;|&nbsp; Based
       on the template by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
