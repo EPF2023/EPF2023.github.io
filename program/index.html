@@ -156,11 +156,24 @@
         length = [2,2,6]
       }
       nonEmptyColumns.forEach((column,index) => {
-        const tableCell = document.createElement('td');
-        tableCell.textContent = column;
-        tableCell.setAttribute('colspan', length[index]);
-        tableCell.setAttribute('style', 'text-align: center;padding:4px 12px 4px 4px;');
-        tableCell.setAttribute('class', 'border');
+      if (index === 3) {
+        return;
+      }
+      const tableCell = document.createElement('td');
+        if (nonEmptyColumns.length === 4 && index === 2) {
+            tableCell.setAttribute('colspan', length[index]);
+            tableCell.setAttribute('style', 'text-align: center;padding:4px 12px 4px 4px;');
+            tableCell.setAttribute('class', 'border');
+            const link = document.createElement('a');
+            link.href = nonEmptyColumns[nonEmptyColumns.length - 1];
+            link.textContent = nonEmptyColumns[nonEmptyColumns.length - 2];
+            tableCell.appendChild(link);
+          } else if (index !== 3) {
+            tableCell.textContent = column;
+            tableCell.setAttribute('colspan', length[index]);
+            tableCell.setAttribute('style', 'text-align: center;padding:4px 12px 4px 4px;');
+            tableCell.setAttribute('class', 'border');
+          }
         if (bold) {
           tableCell.textContent=''
           const sessionName = column.split(' session, chaired by:');
